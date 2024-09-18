@@ -35,7 +35,7 @@ while jugando:
     tiempo_pasado += reloj.tick(FPS)
     
     if tiempo_pasado > tiempo_entre_enemigos:
-        enemigos.append(Enemigo(random.randint(0,ANCHO),100))
+        enemigos.append(Enemigo(random.randint(0,ANCHO),-50))
         tiempo_pasado = 0 
     
     eventos = pygame.event.get()
